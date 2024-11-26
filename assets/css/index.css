@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 60vh;
 }
 
 .logo img {
@@ -61,102 +61,85 @@ h1 {
 .h2 h2 {
   font-size: 2rem;
   color: black;
-  margin-right: 130px;
+  margin-right: 150px;
   margin-top: 10px;
   text-align: left;
   font-weight: normal;
-  top: -150px;
-
 }
-
-.grid-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-  max-width: 100%;
-  flex-wrap: nowrap;
-  margin-right: 120px;
-  width: 100%;
+.recipe-container {
+  padding: 20px;  
 }
-
-.grid-container::-webkit-scrollbar {
-  height: 8px;
-}
-
-.grid-container::-webkit-scrollbar-thumb {
-  background: #ccc;
+.card {
+ border: 1px solid #ddd;
   border-radius: 10px;
-}
-
-.grid-container::-webkit-scrollbar-track {
-  background: #f0f0f0;
-}
-
-.item {
-  flex: 1 1 300px;
-  max-width: 300px;
-  height: auto;
-  text-align: center;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
-.item:hover {
+.card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+} 
+.image-s {
+ width: 100%;
+ height: 200px;
+ object-fit: cover;
+ transition: 0.3s;
 }
-
-/* Images */
-.item img {
-  width: 80%;
-  height: 150px;
-  object-fit: cover;
-  transition: opacity 0.3s;
+.image-s:hover {
+  opacity:0.8;
 }
-
-.item img:hover {
-  opacity: 0.8;
-}
-
-.item h2 {
+.card-title {
   font-size: 1.25rem;
   color: #333;
-  margin: 15px 0;
-}
-
-.grid-container .item a {
+  margin: 15 0;
   text-decoration: none;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
-.read-more {
+.card-body {
+  padding: 15px;
+}
+.button {
   background-color: orange;
-  color: #fff;
-  border: none;
+  border-color: orange;
+  width: 100%;
   padding: 10px 15px;
   font-size: 1rem;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-bottom: 15px;
-  width: 100%;
 }
-
-.read-more:hover {
-  background-color: #e04848;
+.button:hover {
+  background-color: #ff6600 ;
+ border-color: #ff6600;
 }
-
 .recipe-navigation a {
   text-decoration: none;
   color: blueviolet;
   font-size: 1.2rem;
 }
+.title h1 {
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  top: 0px;
+  font-weight: 550;
+}
+.recipe image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
 .grid-container-2 {
   height: 100vh;
   display: flex;
