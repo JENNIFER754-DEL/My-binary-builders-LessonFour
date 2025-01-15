@@ -98,7 +98,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .card-body {
@@ -130,14 +130,13 @@ a:hover {
   top: 0px;
   font-weight: 550;
 }
-.recipe image img {
-  width: 100%;
-  max-width: 300px;
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 300px;
   height: auto;
-  object-fit: cover;
-  border-radius: 20px;
-  display: block;
-  margin: 0 auto;
 }
 
 .grid-container-2 {
